@@ -42,12 +42,28 @@
   padding: 0;
 }
 
-body {
+/* body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #111;
   background-color: #ffffff;
   line-height: 1.6;
+} */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #111;
+  line-height: 1.6;
+
+  /* Gradient background */
+  background: linear-gradient(
+    to bottom,
+    #f7975b 0%,
+    #d09a60 40%,
+    #f0e1e1 100%
+  );
 }
+
+
 
 /* NAVBAR */
 .nav {
@@ -55,8 +71,29 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #050404;
 }
+
+/* NAV BUTTON STYLE (Home & Movement) */
+.nav-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-color: #050404;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* Floating hover effect */
+.nav-btn:hover {
+  background: rgba(235, 102, 102, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
 
 .nav h1 {
   font-size: 22px;
@@ -71,7 +108,7 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: #4b0082;
+  color: #5e0313;
   font-weight: 500;
 }
 
@@ -92,14 +129,14 @@ body {
 
 .hero p {
   font-size: 18px;
-  color: #555;
+  color: #070606;
   margin-bottom: 30px;
 }
 
 /* BUTTON */
 .btn {
   padding: 12px 28px;
-  border: 1px solid #999;
+  border: 1px solid #0b0a0a;
   background: #f7f7f7;
   cursor: pointer;
   border-radius: 6px;
@@ -107,7 +144,7 @@ body {
 }
 
 .btn:hover {
-  background: #eaeaea;
+  background: #ee9292;
 }
 
 /* CARDS */
